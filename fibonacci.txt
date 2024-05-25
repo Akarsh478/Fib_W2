@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+   printf("The first six digits of the fibonacci sequence are:\n");
+   int n1=0;
+   int n2=1;
+   int n;
+   int i;
+   printf("%d\n", n1);
+   printf("%d\n", n2);
+   for(i=3;i<7;i++){
+       n = n1+n2;
+       printf("%d\n", n);
+       n1 = n2;
+       n2 = n;
+   }
+   
+}
